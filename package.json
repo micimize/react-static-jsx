@@ -1,6 +1,6 @@
 {
   "name": "react-static-jsx",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Renders children components using dangerouslySetInnerHTML",
   "repository": "https://github.com/mangochomp/react-static-jsx",
   "author": "MangoChomp",

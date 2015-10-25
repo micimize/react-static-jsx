@@ -13,10 +13,7 @@ module.exports = {
         path:     path.join(__dirname, "dist"),
         filename: "static.js"
     },
-    externals: {
-        'bundle!react': 'react',
-        'bundle!react/addons': 'react/addons'
-    },
+    externals: { 'bundle!react': 'react' },
     plugins: [
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin()

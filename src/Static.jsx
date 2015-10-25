@@ -1,7 +1,7 @@
 /*global require, module, document*/
 "use strict";
 
-var React = require('react/addons');
+var React = require('react');
 var R = require('ramda');
 var styleToCssString = require('react-style-to-css');
 

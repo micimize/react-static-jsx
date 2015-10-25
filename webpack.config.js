@@ -14,17 +14,12 @@ module.exports = {
         filename: "static.js"
     },
     externals: {
-        react: {
-            root: 'React',
-            commonjs: 'react',
-            commonjs2: 'react',
-            amd: 'react'
-        }
+        'bundle!react': 'react',
+        'bundle!react/addons': 'react/addons'
     },
     plugins: [
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin()
-     //   new webpack.optimize.UglifyJsPlugin()
     ],
     module:  {
         loaders: [
@@ -36,11 +31,7 @@ module.exports = {
         ]
     },
     resolve: {
-        modulesDirectories: [
-            "src",
-            "node_modules",
-            "web_modules"
-        ],
+        modulesDirectories: [ "src", "node_modules", "web_modules" ],
         extensions: ["", ".json", ".js", ".jsx"]
     },
     node:    {

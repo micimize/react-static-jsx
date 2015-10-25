@@ -1,6 +1,6 @@
 {
   "name": "react-static-jsx",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Renders children components using dangerouslySetInnerHTML",
   "repository": "https://github.com/mangochomp/react-static-jsx",
   "author": "MangoChomp",
@@ -18,10 +18,12 @@
     "jsx-loader": "^0.12.2",
     "webpack": "1.9.10"
   },
+  "peerDependencies":{
+    "react": ">=0.13.3"
+  },
   "dependencies": {
     "imports-loader": "^0.6.4",
     "ramda": "^0.14.0",
-    "react": "^0.13.3",
     "react-style-to-css": "^0.0.1"
   },
   "engines": {
